@@ -8,6 +8,7 @@ const authStore = (set: any) => ({
   addUser: (user: any) => set({ userProfile: user }),
   removeUser: () => set({ userProfile: null })
 })
+
 const useAuthStore = create(
   persist(authStore, {
     name: 'auth'
